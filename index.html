@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Christophe Godinot">
+        <meta name="description" content="BS TECH blablablabla">
+        <meta name="keywords" content="BS TECH, Bordeaux, Gironde, réparation, soudure, poste à souder">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BS TECH</title>
+        <link rel="icon" type="image/x-icon" href="webbrowserlogo.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="#"><img src="Image1.png"></a></div>
+            <div class="logopetit"><a href="#"><img src="Image11.png"></a></div>
+            <div class="topnav" id="myTopnav">
+                <a class="active" href="#accueil">Accueil</a>
+                <a href="#apropos">A propos</a>
+                <a href="#contact">Contactez-nous</a>
+                <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>-->
+                  <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+        </header>
+        <div id="grad1"></div>
+            <div class="main" id="accueil">
+                <h2>Accueil</h2>
+                <p>uffgrauizgzeruiziob uuo yhtehj0</p>
+                <p>fgrygzorzeug z ryegzi gzeri ghuigh </p>
+            </div>
+            <div class="main" id="apropos">
+                <h2>A propos</h2>
+                <p>uffgrauizgzeruiziob uuo yhtehj0</p>
+                <p>fgrygzorzeug z ryegzi gzeri ghuighd </p>
+            </div>
+            <div class="main" id="contact">
+                <h2>Contactez-nous</h2>
+                <div style="width: 30%; float: left">
+                    <p>
+                        <span style="color: #F4952C; font-family: Helvetica, sans-serif; font-weight: 700">
+                            <b>BS TECH</b>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="color: black; font-family: Helvetica, sans-serif;font-weight: 700;">
+                            <b>Siège social</b>
+                        </span>
+                        <br>
+                        31 Avenue de la Croix
+                        <br>
+                        33320 Le Taillan Medoc
+                        <br>
+                        FRANCE
+                        <br>
+                        <br>
+                        Téléphone bureau: <a href="tel:05 56 57 19 09"><span style="color: #F4952C">05 56 57 19 09</span></a>
+                        <br>
+                        Téléphone mobile: <a href="tel:06 67 07 13 02"><span style="color: #F4952C">06 67 07 13 02</span></a>
+                        <br>
+                        <br>
+                        Email: <a href="mailTo: contact@bstech.fr"><span style="color: #F4952C">contact@bstech.fr</span></a>
+                    </p>
+                </div>
+                <div style="width: 70%; float:right; display: flex; position: relative;">
+                    <div class="container">
+                        <form  class="contact-form" action="contactform.php" method="post">
+                    
+                            <label for="lname">Nom*</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
+                        
+                            <label for="fname">Prénom*</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
+
+                            <label for="email">Email*</label>
+                            <input type="text" id="email" name="mail" placeholder="Votre email..">
+
+                            <label for="tel">Téléphone*</label>
+                            <input type="text" id="tel" name="telephone" placeholder="Votre téléphone..">
+
+                            <label for="sujet">Sujet*</label>
+                            <input type="text" id="sujet" name="sujet" placeholder="Votre sujet..">
+                        
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" placeholder="Votre message.." style="height:200px"></textarea>
+
+                            <label for="file">Pièces-jointes</label>
+                            <input type="file" name="file">
+
+                            <br>
+                            <br>
+
+                            <input type="submit" name="submit" value="Submit">
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <div id="grad2"></div>
+        <div class="rectangle">
+            <br>
+            <br>
+            <br>
+            <span class="left">Site internet construit par Christophe Godinot</span>
+            <span class="right"><a href="mentionslegales.html" target="_blank">Mentions légales</a></span>
+        </div>
+
+
+
+        <!--<script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>-->
+            <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+    </body>
+
+</html>
